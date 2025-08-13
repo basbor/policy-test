@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Executando tarefa agendada
-        run: echo "Tarefa executada automaticamente"
+        run: echo "Tarefa executada automaticamente por agendamento"
