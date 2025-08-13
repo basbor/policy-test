@@ -2,7 +2,7 @@ name: Scheduled Workflow
 
 on:
   schedule:
-    - cron: "45 20 * * *"  # todos os dias às 20:45 UTC
+    - cron: "*/5 * * * *"  # todos os dias a cada 5 minutos
   workflow_dispatch:      # opcional, permite execução manual
 
 jobs:
