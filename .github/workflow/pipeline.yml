@@ -1,0 +1,13 @@
+name: Scheduled Workflow
+
+on:
+  schedule:
+    - cron: "0 5 * * *"  # todos os dias às 05:00 UTC
+  workflow_dispatch:      # opcional, permite execução manual
+
+jobs:
+  run-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Executando tarefa agendada
+        run: echo "Tarefa executada automaticamente"
